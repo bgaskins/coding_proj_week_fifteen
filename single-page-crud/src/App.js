@@ -16,7 +16,7 @@ resource from the API.
 */
 
 
-// API endpoint for houses
+// API endpoint for the Houses API
 const HOUSES_ENDPOINT = 'https://ancient-taiga-31359.herokuapp.com/api/houses';
 
 // Helper function for updating a house
@@ -30,7 +30,7 @@ function updateHouse(house) {
     body: JSON.stringify(house),
   })
     .then(response => {
-      // Check if the network response is successful
+      // Check if the network response is successful or not
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
